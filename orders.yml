@@ -1,0 +1,44 @@
+ab2ce561:
+  amount_paid: 10.0
+  buyer: Chris
+  change: 7.359999999999999
+  denom: "1 x \xA35.0, 1 x \xA32.0, 1 x \xA30.2, 1 x \xA30.1, 1 x \xA30.05, 1 x \xA3\
+    0.01, "
+  product_id: 1
+  product_name: Pears
+  product_price: 2.64
+9b7e2eb2:
+  amount_paid: 20.0
+  buyer: Van
+  change: 18.38
+  denom: "3 x \xA35.0, 1 x \xA32.0, 1 x \xA31.0, 1 x \xA30.2, 1 x \xA30.1, 1 x \xA3\
+    0.05, 1 x \xA30.02, 1 x \xA30.01, "
+  product_id: 0
+  product_name: Apples
+  product_price: 1.62
+a0200796:
+  amount_paid: 23.0
+  buyer: John
+  change: 21.38
+  denom: "4 x \xA35.0, 1 x \xA31.0, 1 x \xA30.2, 1 x \xA30.1, 1 x \xA30.05, 1 x \xA3\
+    0.02, 1 x \xA30.01, "
+  product_id: 0
+  product_name: Apples
+  product_price: 1.62
+73664f36:
+  amount_paid: 3.0
+  buyer: asd
+  change: 0.3599999999999999
+  denom: "1 x \xA30.2, 1 x \xA30.1, 1 x \xA30.05, "
+  product_id: 1
+  product_name: Pears
+  product_price: 2.64
+9faaf967:
+  amount_paid: 32.0
+  buyer: as
+  change: 30.38
+  denom: "6 x \xA35.0, 1 x \xA30.2, 1 x \xA30.1, 1 x \xA30.05, 1 x \xA30.02, 1 x \xA3\
+    0.01, "
+  product_id: 0
+  product_name: Apples
+  product_price: 1.62

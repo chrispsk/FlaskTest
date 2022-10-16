@@ -1,0 +1,66 @@
+{% extends 'base.jinja' %}
+
+{% block main %}
+  <form method="post" action="{{ url_for('index') }}">
+    <div class="form-group row">
+      <label for="product" class="col-sm-2 form-control-label">Product:</label>
+      <div class="col-sm-8">
+        <select onchange="selectedSubjectName()" class="form-control" id="product" name="product" required>
+          <option value="">-----</option>
+          {% for product in products %}
+            <option value="{{ loop.index - 1 }}">{{ product.name }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div class="col-sm-2 form-control-label">
+        Price:
+        <span id="product-price">
+          TODO
+        </span>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="buyer" class="col-sm-2 form-control-label">Buyer:</label>
+      <div class="col-sm-10">
+        <input type="text" pattern="[A-Za-z]{3,}" class="form-control" id="buyer" name="buyer" placeholder="Buyer" value="{{ buyer }}" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="paid" class="col-sm-2 form-control-label">Amount Paid:</label>
+      <div class="col-sm-10">
+        <!-- Could we use a better input type here? -->
+        <input type="number" step="0.01" class="form-control" id="paid" name="paid" placeholder="Amount Paid" value="{{ paid }}" required>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Place Order</button>
+      </div>
+    </div>
+  </form>
+  <script>
+    var products = {{ products|tojson|safe }};
+    console.log(products);
+     
+    
+    function selectedSubjectName() {
+      var subjectIdNode = document.getElementById('product');
+      var value =
+      subjectIdNode.options[subjectIdNode.selectedIndex].text;
+
+      if(products[0]['name']==value){
+        document.getElementById("product-price").innerHTML=products[0]['price'];
+      } else if(products[1]['name']==value) {
+        document.getElementById("product-price").innerHTML=products[1]['price'];
+      } else if(products[2]['name']==value) {
+        document.getElementById("product-price").innerHTML=products[2]['price'];
+      } else if(products[3]['name']==value) {
+        document.getElementById("product-price").innerHTML=products[3]['price'];
+      } else {
+        document.getElementById("product-price").innerHTML="Product not available";
+      }
+   }
+   
+   
+  </script>
+{% endblock %}

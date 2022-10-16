@@ -1,0 +1,34 @@
+{% extends 'base.jinja' %}
+
+{% block main %}
+
+<table>
+  <tr>
+    <th>Prod Link</th>
+    <th>Product</th>
+    <th>Buyer</th>
+    <th>Paid</th>
+    <th>Price</th>
+    <th>Change</th>
+  </tr>
+  
+  {% for key,value in prods.items() %}
+  <tr>
+            <td><a href="/confirmation/{{ key }}">Link</a></td>
+
+            <td>{{ value.product_name }}</td>
+            
+            <td>{{ value.buyer }}</td>
+            
+            <td>{{ value.amount_paid }}</td>
+            
+            <td>{{ value.product_price }}</td>
+            
+            <td>{{ value.change }}</td>
+    </tr>
+    {% endfor %}
+  
+
+</table>
+
+{% endblock %}

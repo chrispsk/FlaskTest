@@ -1,0 +1,20 @@
+{% extends 'base.jinja' %}
+
+{% block main %}
+  <dl>
+    <dt>Order ID</dt>
+    <dd>{{ order_id }}</dd>
+
+    <dt>Amount Paid</dt>
+    <dd>{{ amount_paid }}</dd>
+
+    <dt>Item Price</dt>
+    <dd>{{ item_price }}</dd>
+
+    <dt>Change Due</dt>
+    <dd>{{ change_due }}</dd>
+
+    <dt>Change Denominations</dt>
+    <dd>{{ denom }}</dd>
+  </dl>
+{% endblock %}
