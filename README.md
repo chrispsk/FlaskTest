@@ -1,28 +1,16 @@
-# TutorCruncher Flask Junior Developer Test
-
-Here is an unfinished Flask web app of a simple till system for buying fruit. Underneath are a few 
-tasks that you need to complete to get the till up and running.
+# Very basic Flask Junior Developer Test for a childish company 
 
 ## Objectives
 
 ### Primary
 
 - Show a preview of how much the product will cost
-- Validate the values returned from the form, then either: 
-  - Return an error message
-  - Redirect to the confirmation page
 - On the confirmation page, generate and display the change from the amount paid 
   with denominations. **For example, £17.40 in change would equal `1 x £10, 1 X £5, 2 x £1, 2 X £0.20`**
 
 ### Secondary (if you have time)
 
-- Build a view to list all orders that have been recorded and sort them by date created
-- Any other improvements you can thing of
-
-## Rules
-
-- You can use online resources
-- You have 2 hours
+- Build a view to list all orders that have been recorded
 
 ## Set up
 
